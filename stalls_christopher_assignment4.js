@@ -14,4 +14,11 @@ function convertMoney (itemTotal, tax)
 	return total.tofixed(2);
 }
 
-//
+//Return string number as actual number
+function realNumber (numberPassed)
+{
+	var stringNumber = numberPassed;
+	parseInt(stringNumber);
+	
+	return stringNumber;
+}
