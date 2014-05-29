@@ -22,3 +22,22 @@ function realNumber (numberPassed)
 	
 	return stringNumber;
 }
+
+//Find if string is part of URL
+function findURL (url)
+{
+	var stringURL = url;
+	var urlPosition; 
+	var isURL;
+	
+	urlPosition = stringURL.indexof("http");
+	
+	if (urlPosition == 0)
+	{
+		isURL = true;
+	} else {
+		isURL = false;
+	}
+	
+	return isURL;
+}
