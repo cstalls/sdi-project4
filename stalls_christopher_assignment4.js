@@ -66,7 +66,7 @@ function capString (someString)
 function compareDates ()
 {
 	var bDayOne = new Date("13 Jan 1989");
-	var bDayTwo = new Date("12 June 1988");
+	var bDayTwo = new Date("12 June 1996");
 	
 	var firstMsg = "Birthday one is older than birthday two.";
 	var secondMsg = "Birthday two is older than birthday one.";
@@ -80,6 +80,16 @@ function compareDates ()
 	
 }
 
-var dates = compareDates();
-
-console.log(dates);
+//sum numbers in array
+function sumNumbers (array)
+{
+	var array = new Array(1, 2, 4);
+	var sum = 0;
+	
+	for (i = 0; i < array.length; i++)
+	{
+		sum += array[i];
+	}
+	
+	return sum
+}
