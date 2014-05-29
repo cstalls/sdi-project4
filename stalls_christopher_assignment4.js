@@ -61,3 +61,25 @@ function capString (someString)
 	return fullName;
 	
 }
+
+//compare two dates
+function compareDates ()
+{
+	var bDayOne = new Date("13 Jan 1989");
+	var bDayTwo = new Date("12 June 1988");
+	
+	var firstMsg = "Birthday one is older than birthday two.";
+	var secondMsg = "Birthday two is older than birthday one.";
+	
+	if (bDayOne < bDayTwo)
+	{
+		return firstMsg;
+	} else {
+		return secondMsg;
+	}
+	
+}
+
+var dates = compareDates();
+
+console.log(dates);
