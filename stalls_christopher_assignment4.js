@@ -9,6 +9,7 @@
 function convertMoney (itemTotal, tax)
 {
 	var total;
+	//calculate total
 	total = itemTotal * tax;
 	
 	return total.tofixed(2);
@@ -18,6 +19,7 @@ function convertMoney (itemTotal, tax)
 function realNumber (numberPassed)
 {
 	var stringNumber = numberPassed;
+	//change string to number
 	parseInt(stringNumber);
 	
 	return stringNumber;
@@ -30,9 +32,11 @@ function findURL (url)
 	var urlPosition; 
 	var isURL;
 	
+	//get index of http should start at 0
 	urlPosition = stringURL.indexof("http");
 	
-	if (urlPosition == 0)
+	//check if url is true/false
+	if (urlPosition >= 0)
 	{
 		isURL = true;
 	} else {
@@ -40,4 +44,20 @@ function findURL (url)
 	}
 	
 	return isURL;
+}
+
+//title case a string
+function capString (someString)
+{
+	var initString = someString;
+	
+	initString = "stallschris";
+	
+	var lastName = initString.substr(0, 6);
+	var firstName = initString.substr(6, 10);
+	
+	var fullName = lastName.substr(0,1).toUpperCase() + lastName.substr(1) + " " + firstName.substr(0, 1).toUpperCase() + firstName.substr(1);
+	
+	return fullName;
+	
 }
