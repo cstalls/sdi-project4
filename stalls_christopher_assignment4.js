@@ -53,9 +53,11 @@ function capString (someString)
 	
 	initString = "stallschris";
 	
+	//split string based on known index
 	var lastName = initString.substr(0, 6);
 	var firstName = initString.substr(6, 10);
 	
+	//capitalize first character of each now individual string and add them together
 	var fullName = lastName.substr(0,1).toUpperCase() + lastName.substr(1) + " " + firstName.substr(0, 1).toUpperCase() + firstName.substr(1);
 	
 	return fullName;
@@ -65,12 +67,16 @@ function capString (someString)
 //compare two dates
 function compareDates ()
 {
+	//initial dates to compare
 	var bDayOne = new Date("13 Jan 1989");
 	var bDayTwo = new Date("12 June 1996");
 	
+	//message for who is older
 	var firstMsg = "Birthday one is older than birthday two.";
 	var secondMsg = "Birthday two is older than birthday one.";
 	
+	
+	//check dates
 	if (bDayOne < bDayTwo)
 	{
 		return firstMsg;
@@ -81,15 +87,16 @@ function compareDates ()
 }
 
 //sum numbers in array
-function sumNumbers (array)
+function sumNumbers ()
 {
 	var array = new Array(1, 2, 4);
 	var sum = 0;
 	
+	//add numbers in array
 	for (i = 0; i < array.length; i++)
 	{
 		sum += array[i];
 	}
 	
-	return sum
+	return sum;
 }
